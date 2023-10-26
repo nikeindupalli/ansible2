@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install tree software
+    apt:
+     name: tree
+     state: present
+  - name: install wget software
+    apt:
+     name: wget
+     state: present
+  - name: install apache2 software
+    apt:
+     name: wget
+     state: present
