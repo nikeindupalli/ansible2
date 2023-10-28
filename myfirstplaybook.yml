@@ -10,3 +10,7 @@
     apt:
      name: "{{mywebpackonubuntu}}"
      state: present
+  - name: install java software
+    apt:
+     name: "{{myjavapackonubuntu}}"
+     state: present
