@@ -4,7 +4,7 @@
   vars:
    myvar1: tree
    myvar2: git
-   myvar2: wget
+   myvar3: wget
   tasks:
   - name: I want to show message of tree
     debug:
