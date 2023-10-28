@@ -9,5 +9,5 @@
   - name: edit text in apache2
     template:
       src: index.j2
-      dest: var/www/html/index.html
+      dest: /var/www/html/index.html
        
