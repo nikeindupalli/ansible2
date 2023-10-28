@@ -6,7 +6,7 @@
     apt:
       name: wget
       stateee: present
-    ignore_error: yes
+    ignore_errors: yes
   - name: install git
     apt: 
       name: git
