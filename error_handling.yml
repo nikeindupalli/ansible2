@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.1.106
+- host: 172.31.1.106
   become: yes
   tasks:
   - name: install wget
