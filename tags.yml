@@ -6,10 +6,10 @@
     apt:
       name: wget
       state: present
-    tags: wget
   - name: install java8
     apt:
       name: openjdk-8-jre
       state: present
+    tags: java
 
    
