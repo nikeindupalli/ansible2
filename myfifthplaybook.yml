@@ -10,5 +10,5 @@
   - name: Start httpd
     yum:
       name: httpd
-      state: started
+      state: present
     when: ansible_os_family == "RedHat"
