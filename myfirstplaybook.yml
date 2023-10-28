@@ -8,5 +8,5 @@
      state: present
   - name: install apache2 software
     apt:
-     name: "{{mywebpackonubuntu}}""
+     name: "{{mywebpackonubuntu}}"
      state: present
