@@ -9,9 +9,10 @@
   - name: I want to show message of tree
     debug:
       msg: "{{myvar1}}"
-  - name: I want to show message of tree
+  - name: I want to show message of git
     debug:
       msg: "{{myvar2}}"
-  - name: I want to show message of tree
+  - name: I want to show message of wget
     debug:
       msg: "{{myvar3}}"
+    
