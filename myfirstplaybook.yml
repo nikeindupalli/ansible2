@@ -1,5 +1,5 @@
 ---
-- hosts: server
+- hosts: group
   become: yes
   tasks:
   - name: install tree software
@@ -8,5 +8,5 @@
      state: present
   - name: install apache2 software
     apt:
-     name: wget
+     name: "{{mywebpackonubuntu}}""
      state: present

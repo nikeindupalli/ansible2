@@ -1,3 +1,6 @@
-[server]
+[group]
 172.31.1.106
 172.31.6.180
+
+[group:vars]
+mywebpackonubuntu=apache2
