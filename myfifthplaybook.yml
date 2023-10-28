@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.6.180
+  become: yes
+  tasks:
+  - name: install httpd
+    yum:
+      name: httpd
+      state: present
+  - name: Start httpd
+    yum:
+      name: httpd
+      state: started
