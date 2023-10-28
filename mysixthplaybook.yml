@@ -9,3 +9,5 @@
   - name: I want to show message
     debug:
       msg: "{{myvar1}}"
+      msg: "{{myvar2}}"
+      msg: "{{myvar3}}"
