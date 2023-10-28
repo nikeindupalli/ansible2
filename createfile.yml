@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Create a file
+    file:
+      path: /home/remah/file1.yml
+      state: present
+  
