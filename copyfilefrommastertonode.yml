@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: copy file from master to node
+    copy:
+      src: sample.txt
+      dest: /home/remah/file1
+  
