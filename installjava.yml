@@ -1,0 +1,12 @@
+---
+- hosts: group
+  become: yes
+  tasks:
+  - name: install java
+    apt:
+      name: "{{myjavapackonubuntu}}"
+      state: present
+  - name: install java
+    yum:
+      name: "{{myjavapackonredhat}}"
+      state: present
