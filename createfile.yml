@@ -2,9 +2,6 @@
 - hosts: all
   become: yes
   tasks:
-  - name: Create a file
-    file:
-      path: /home/remah/file1.yml
-      state: touch
-      
+  - include_tasks: myfile1.yml
   
+
