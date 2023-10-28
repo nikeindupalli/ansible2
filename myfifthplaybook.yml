@@ -1,12 +1,14 @@
 ---
-- hosts: 172.31.6.180
+- hosts: all 
   become: yes
   tasks:
   - name: install httpd
     yum:
       name: httpd
       state: present
+    when: ansible_os_family == "RedHat"
   - name: Start httpd
     yum:
       name: httpd
       state: started
+    when: ansible_os_family == "RedHat"
