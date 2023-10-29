@@ -8,7 +8,7 @@
       dest: /var/www/html/index.html
     notify: restartwebserver
   handlers:
-  - name: install apache2
+  - name: restartwebserver
     service:
       name: apache2
       state: restarted
