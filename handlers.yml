@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Copy dynamic file into node side
+    template:
+      src: index.j2
+      dest: /var/www/html/index.html
+    notify: restartwebserver
+  handlers:
+  - name: install apache2
+    service:
+      name: apache2
+      state: restarted
