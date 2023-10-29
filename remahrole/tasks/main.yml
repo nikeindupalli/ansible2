@@ -1,2 +1,6 @@
 ---
 # tasks file for remahrole
+- name: install apache2
+  apt:
+    name: apache2
+    state: present
