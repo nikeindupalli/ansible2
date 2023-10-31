@@ -13,3 +13,9 @@
   template:
     src: templates/myhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+- name: copy tomcat service file into node server
+  template:
+    src:  templates/mytomservice.j2
+    dest: /etc/systemd/system/tomcat.service
+
