@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install ansible nodes
+    ec2:
+     key_name: raviohio
+     instance_type: t2.micro
+     image: ami-06fc8dbc8bad1994c
+     wait: yes
+     group: default
+     count: 2
+     vpc_subnet_id: subnet-0cedb9454d9cc8f3a
+     assign_public_ip: yes
+     region: us-east-2
+     instance_tags:
+       Name: ansiblenodes
