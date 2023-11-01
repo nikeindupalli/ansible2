@@ -4,4 +4,4 @@
     state: started
     daemon_reload: yes
     name: tomcat
-    enabled: true
+    enabled: yes
